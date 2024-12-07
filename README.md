@@ -36,8 +36,8 @@ This project implements a robust ZeroMQ (ZMQ) based client-server communication 
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/zmq-client-server.git
-cd zmq-client-server
+git clone https://github.com/RaGR/AZMA-ZMQ-CLIENT-SERVER
+cd AZMA-ZMQ-CLIENT-SERVER
 ```
 
 2. Create and activate a virtual environment:

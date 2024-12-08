@@ -1,6 +1,6 @@
 # ZMQ Client-Server Communication Project 🤖
 
-Hey there! Welcome to my ZeroMQ project - a pretty cool little system for running remote commands and doing some math magic.
+Hey there! Welcome to my ZeroMQ project - a pretty cool little system for running remote commands and doing some math magic. 
 
 ## What's This All About? 🤔
 
@@ -19,54 +19,39 @@ So, I built this project to make remote communication between clients and server
    ```bash
    git clone https://github.com/RaGR/AZMA-ZMQ-CLIENT-SERVER
    cd AZMA-ZMQ-CLIENT-SERVER
+   ```
 
-```
+2. Set up a virtual environment (seriously, do this):
+   ```bash
+   python3 -m venv venv
+   source venv/bin/activate  # Windows users: use venv\Scripts\activate
+   ```
 
-1.  Set up a virtual environment (seriously, do this):
+3. Install the dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-    ```
-    python3 -m venv venv
-    source venv/bin/activate  # Windows users: use venv\Scripts\activate
-
-    ```
-
-2.  Install the dependencies:
-
-    ```
-    pip install -r requirements.txt
-
-    ```
-
-How to Use This Thing
----------------------
+## How to Use This Thing
 
 ### Start the Server
-
-```
+```bash
 python server/main.py
-
 ```
 
 ### Fire Up the Client
-
-```
+```bash
 python client/main.py
-
 ```
 
 ### What Can You Do?
-
 When you run the client, you'll see a menu with some cool options:
+1. Run OS commands (carefully!)
+2. Do some math calculations
+3. Quit and go do something else
 
-1.  Run OS commands (carefully!)
-2.  Do some math calculations
-3.  Quit and go do something else
-
-Project Layout
---------------
-
+## Project Layout
 Here's how everything's organized:
-
 ```
 zmq-client-server/
 ├── client/         # Client-side magic
@@ -74,37 +59,27 @@ zmq-client-server/
 ├── tests/          # Making sure everything works
 ├── logs/           # Keeping track of what's happening
 └── requirements.txt  # All the goodies we need
-
 ```
 
-Security? We've Got You Covered 🛡️
------------------------------------
+## Security? We've Got You Covered 🛡️
+- Restricted command execution (no wild west here)
+- Logging everything (Big Brother style)
+- Safe math calculations
+- Potential for adding extra authentication
 
--   Restricted command execution (no wild west here)
--   Logging everything (Big Brother style)
--   Safe math calculations
--   Potential for adding extra authentication
+## Wanna Contribute?
+1. Fork the repo
+2. Create a cool feature branch
+3. Commit your awesome changes
+4. Push it up
+5. Open a pull request
 
-Wanna Contribute?
------------------
+## Run Into Problems?
+- Connection issues? Check your server's running
+- Authentication troubles? Double-check your setup
+- Performance feeling sluggish? Time to optimize!
 
-1.  Fork the repo
-2.  Create a cool feature branch
-3.  Commit your awesome changes
-4.  Push it up
-5.  Open a pull request
-
-Run Into Problems?
-------------------
-
--   Connection issues? Check your server's running
--   Authentication troubles? Double-check your setup
--   Performance feeling sluggish? Time to optimize!
-
-Get in Touch
-------------
-
+## Get in Touch
 Got questions? Need to chat?
-
--   Email: <ramtin7.samadi@gmail.com>
--   Project Link: [GitHub Repo](https://github.com/RaGR/AZMA-ZMQ-CLIENT-SERVER)
+- Email: ramtin7.samadi@gmail.com
+- Project Link: [GitHub Repo](https://github.com/RaGR/AZMA-ZMQ-CLIENT-SERVER)

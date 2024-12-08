@@ -1,85 +1,119 @@
-# ZMQ Client-Server Communication Project 🤖
+# ZMQ Client-Server Communication System
 
-Hey there! Welcome to my ZeroMQ project - a pretty cool little system for running remote commands and doing some math magic. 
+## Overview
 
-## What's This All About? 🤔
+This project implements a robust ZeroMQ (ZMQ) based communication system designed for secure remote command execution and mathematical computations. By leveraging ZeroMQ's messaging capabilities, the system provides a flexible and efficient solution for distributed computing tasks.
 
-So, I built this project to make remote communication between clients and servers super smooth and secure. Think of it like a walkie-talkie for computers, but way more powerful!
+## Features
 
-## Getting Started
+- Remote command execution
+- Secure mathematical computation
+- Flexible command routing
+- Comprehensive logging
+- Performance monitoring
 
-### What You'll Need
-- Python 3.8 or newer (because who wants to use old stuff?)
+## Prerequisites
+
+- Python 3.8+
 - ZeroMQ library
-- A virtual environment (trust me, it'll save you headaches)
+- Recommended: Virtual environment
 
-### Let's Get This Running!
+## Quick Start
 
-1. First, grab the code:
-   ```bash
-   git clone https://github.com/RaGR/AZMA-ZMQ-CLIENT-SERVER
-   cd AZMA-ZMQ-CLIENT-SERVER
-   ```
+### Installation
 
-2. Set up a virtual environment (seriously, do this):
-   ```bash
-   python3 -m venv venv
-   source venv/bin/activate  # Windows users: use venv\Scripts\activate
-   ```
-
-3. Install the dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-## How to Use This Thing
-
-### Start the Server
+1. Clone the repository:
 ```bash
+git clone https://github.com/RaGR/AZMA-ZMQ-CLIENT-SERVER
+cd AZMA-ZMQ-CLIENT-SERVER
+```
+
+2. Create a virtual environment:
+
+```bash
+python3 -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
+
+Install dependencies:
+
+bashCopypip install -r requirements.txt
+Running the System
+Start the Server
+```bash 
 python server/main.py
 ```
 
-### Fire Up the Client
+Run the Client
 ```bash
 python client/main.py
 ```
 
-### What Can You Do?
-When you run the client, you'll see a menu with some cool options:
-1. Run OS commands (carefully!)
-2. Do some math calculations
-3. Quit and go do something else
-
-## Project Layout
-Here's how everything's organized:
+Project Structure
 ```
-zmq-client-server/
-├── client/         # Client-side magic
-├── server/         # Server-side wizardry
-├── tests/          # Making sure everything works
-├── logs/           # Keeping track of what's happening
-└── requirements.txt  # All the goodies we need
+Copyzmq-client-server/
+├── client/
+│   ├── main.py
+│   └── utils.py
+├── server/
+│   ├── main.py
+│   └── command_handlers/
+│       ├── os_commands.py
+│       └── math_commands.py
+├── tests/
+│   ├── test_client.py
+│   └── test_server.py
+├── logs/
+│   └── server_logs.log
+└── requirements.txt
 ```
 
-## Security? We've Got You Covered 🛡️
-- Restricted command execution (no wild west here)
-- Logging everything (Big Brother style)
-- Safe math calculations
-- Potential for adding extra authentication
+Security Considerations
 
-## Wanna Contribute?
-1. Fork the repo
-2. Create a cool feature branch
-3. Commit your awesome changes
-4. Push it up
-5. Open a pull request
+Restricted command execution environment
+Comprehensive activity logging
+Secure mathematical expression evaluation
+Potential JWT authentication implementation
 
-## Run Into Problems?
-- Connection issues? Check your server's running
-- Authentication troubles? Double-check your setup
-- Performance feeling sluggish? Time to optimize!
+Extending the Project
+Adding New Command Types
 
-## Get in Touch
-Got questions? Need to chat?
-- Email: ramtin7.samadi@gmail.com
-- Project Link: [GitHub Repo](https://github.com/RaGR/AZMA-ZMQ-CLIENT-SERVER)
+Create a handler in server/command_handlers/
+Update command routing in server/main.py
+Modify client to support new command type
+
+Troubleshooting
+Common Issues
+
+Connection Refused:
+
+Verify server is running
+Check firewall settings
+
+
+Authentication Failures:
+
+Review configuration
+Validate credentials
+
+
+Performance Bottlenecks:
+
+Analyze logs
+Optimize resource allocation
+
+
+
+Contributing
+
+Fork the repository
+Create a feature branch
+Commit changes
+Push to the branch
+Open a pull request
+
+Contact
+
+Maintainer: Ramtin
+Email: ramtin7.samadi@gmail.com
+Project Link: AZMA-ZMQ-CLIENT-SERVER

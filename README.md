@@ -49,7 +49,7 @@ Run the Client
 python client/main.py
 ```
 
-Project Structure
+## Project Structure
 ```
 Copyzmq-client-server/
 ├── client/
@@ -68,43 +68,43 @@ Copyzmq-client-server/
 └── requirements.txt
 ```
 
-Security Considerations
+## Security Considerations
 
 Restricted command execution environment
 Comprehensive activity logging
 Secure mathematical expression evaluation
 Potential JWT authentication implementation
 
-Extending the Project
-Adding New Command Types
+## Extending the Project
+###Adding New Command Types
 
 Create a handler in server/command_handlers/
 Update command routing in server/main.py
 Modify client to support new command type
 
-Troubleshooting
-Common Issues
+## Troubleshooting
+### Common Issues
 
-Connection Refused:
+### Connection Refused:
 
 Verify server is running
 Check firewall settings
 
 
-Authentication Failures:
+### Authentication Failures:
 
 Review configuration
 Validate credentials
 
 
-Performance Bottlenecks:
+### Performance Bottlenecks:
 
 Analyze logs
 Optimize resource allocation
 
 
 
-Contributing
+## Contributing
 
 Fork the repository
 Create a feature branch
@@ -112,7 +112,7 @@ Commit changes
 Push to the branch
 Open a pull request
 
-Contact
+## Contact
 
 Maintainer: Ramtin
 Email: ramtin7.samadi@gmail.com

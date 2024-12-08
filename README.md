@@ -76,7 +76,7 @@ Secure mathematical expression evaluation
 Potential JWT authentication implementation
 
 ## Extending the Project
-###Adding New Command Types
+### Adding New Command Types
 
 Create a handler in server/command_handlers/
 Update command routing in server/main.py
